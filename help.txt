@@ -1,13 +1,5 @@
 ISSUES:
-index.html  nothing shows up unless src="index.js" >> how to use functions from another file in event handler?
-            basic event handlers not working
-check notes in test.js
-other       see if promises can be turned to array or variable?
-            look at youtube api github >> player again
-            https://stackoverflow.com/questions/9575673/javascript-multiple-script-src
-            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/Promise
-            https://dev.to/ramonak/javascript-how-to-access-the-return-value-of-a-promise-object-1bck
-test2.js    browserify not working for MusicBrainzApi class
+1. rewrite musicbrainz api using endpoint url instead of node api
 
 NEXT:
 1. history list for button presses: append results to array and display
@@ -16,5 +8,3 @@ NEXT:
 3. compile list of top 100 artists and add button for that
 
 REMINDERS:
-1. <script src="source.js"> will run the file in src
-2. browserify test2.js -o bundle_test2.js
