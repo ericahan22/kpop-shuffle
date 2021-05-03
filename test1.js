@@ -1,30 +1,45 @@
-var MusicBrainzApi = require('musicbrainz-api').MusicBrainzApi //why doesn't anything past this work
-var search = require('youtube-search')
-require("dotenv").config()
-var fs = require("fs");
-
-const mbApi = new MusicBrainzApi({
-  appName: 'kpop-shuffle',
-  appVersion: '0.1.0',
-  appContactInfo: 'ericahan.38@gmail.com'
-});
-
+//function: randomly selects artist from array
 function randomizer(array) {
     let rand = array[Math.floor(Math.random() * array.length)];
     return rand
 }
 
-var getArtistID = async function(art) {
-    const result = await mbApi.searchArtist(art)
-    for (i=0; i < result.artists.length; i++) {
-        if (result.artists[i].country == 'KR') {
-            var artistID = result.artists[i].id
-            break
+//function: reads files
+function readFile(file, callback) {
+    var request = new XMLHttpRequest()
+    request.overrideMimeType("application/json")
+    request.open("GET", file, true)
+    request.onreadystatechange = function() {
+        if (request.readyState == 4 && request.status == "200") {
+            callback(request.responseText)
         }
     }
-    return artistID
+    request.send()
 }
 
+//nested local functions
+//call: gives artist
+readFile("file:///C:/Users/Erica/kpop-shuffle/databases/artists.txt", function(txt) {
+    var artList = String(txt)
+    var artArray = artList.split(",")
+    var artist = randomizer(artArray)
+
+    //call: gives artist ID
+    readFile("http://musicbrainz.org/ws/2/artist?query="+artist, function(xml) {
+        parser = new DOMParser();
+        xmlDoc = parser.parseFromString(xml,"text/xml");
+        for (i=0;i<25;i++) {
+            if(xmlDoc.getElementsByTagName("country")[0].childNodes[0].nodeValue == "KR") {
+                var artistID = xmlDoc.getElementsByTagName("artist")[0]
+                break
+            }
+        }
+    }
+    //continue here
+    )
+})
+
+/*
 var getReleaseGroupID = async function(art) {
     const res = await mbApi.getArtist(art, ['release-groups'])
     var releaseArray = []
@@ -56,9 +71,6 @@ var getTrack = async function(rel) {
     return track
 }
 //end of generator
-var artList = fs.readFileSync("./databases/artists.txt").toString('utf-8');
-var artArray = artList.split(",")
-var artist = randomizer(artArray)
 
 var opts = {
     maxResults: 10,
@@ -90,6 +102,4 @@ getBothData().then(() => {
     fs.writeFile("./trackEmbed.json", json, function(err, res) {
         if(err) {console.log(err)}
     })
-})
-
-module.exports = function (n) { return n * 111 }
+})*/
