@@ -1,3 +1,0 @@
-var config = {
-  API_KEY: "AIzaSyBWHjs9S0Qq9K2RPVOG37gPi7d8BTbVau0"
-}
