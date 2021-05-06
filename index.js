@@ -31,7 +31,7 @@ readFile(file, function(txt) {
     var artist = randomizer(artArray)
     
     //call: gets artist ID
-    readFile("http://musicbrainz.org/ws/2/artist?query="+artist+"&fmt=json", function(json) {
+    readFile("https://beta.musicbrainz.org/ws/2/artist?query="+artist+"&fmt=json", function(json) {
         var data = JSON.parse(json)
         for (i=0;i<data.artists.length;i++) {
             if(data.artists[i].country == "KR") {
@@ -41,7 +41,7 @@ readFile(file, function(txt) {
         }
 
         //call: get track name
-        readFile("http://musicbrainz.org/ws/2/release?artist="+artistID+"&inc=release-groups+recordings&fmt=json", function(json) {
+        readFile("https://beta.musicbrainz.org/ws/2/release?artist="+artistID+"&inc=release-groups+recordings&fmt=json", function(json) {
             var data = JSON.parse(json)
             const unwanted = ['Interview','Live','DJ-mix']
             for (i=0;i<data.releases.length;i++) {
