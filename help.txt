@@ -1,0 +1,10 @@
+NEXT:
+1. history list for button presses: append results to array and display
+2. playlist maker: button adds current song to array >> can then export to spotify/youtube playlist
+    look up spotify track ids in bulk >> interate through array
+
+REMINDERS:
+cd <this-folder>
+git add .
+git commit -am "message"
+git push origin HEAD:<branch-name>
