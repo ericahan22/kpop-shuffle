@@ -80,7 +80,7 @@ readFile(file, function(txt) {
 //event listeners
 window.addEventListener("DOMContentLoaded", function() {
     document.getElementById("vid").src=""
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/artists.txt")
+    document.getElementById("ready").innerHTML="ready!"
 })
 document.getElementById("butArt").addEventListener("click", function() {
     bigFunction("https://chewtle.github.io/kpop-shuffle/database/artists.txt")
