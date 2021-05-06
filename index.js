@@ -80,17 +80,17 @@ readFile(file, function(txt) {
 //event listeners
 window.addEventListener("DOMContentLoaded", function() {
     document.getElementById("vid").src=""
-    bigFunction("./artists.txt")
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/artists.txt")
 })
 document.getElementById("butArt").addEventListener("click", function() {
-    bigFunction("./artists.txt")
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/artists.txt")
 })
 document.getElementById("butFem").addEventListener("click", function() {
-    bigFunction("./female.txt")
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/female.txt")
 })
 document.getElementById("butMal").addEventListener("click", function() {
-    bigFunction("./male.txt")
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/male.txt")
 })
 document.getElementById("butPop").addEventListener("click", function() {
-    bigFunction("./popular.txt")
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/popular.txt")
 })
