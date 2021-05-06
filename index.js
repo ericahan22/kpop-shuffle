@@ -58,7 +58,7 @@ readFile(file, function(txt) {
             var track = randomizer(trkArr)
 
             //call: get config.json data
-            readFile("https://raw.githubusercontent.com/chewtle/kpop-shuffle/5/3/21/config.json?token=ANXIJ22RWHOZQYI6AHZVD33ATRLXI", function(json) {
+            readFile("https://chewtle.github.io/kpop-shuffle/config.json", function(json) {
                 var data = JSON.parse(json)
 
                 //call: get youtube video id
