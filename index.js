@@ -6,15 +6,24 @@ function randomizer(array) {
 
 //function: reads files
 function readFile(file, callback) {
-    var request = new XMLHttpRequest()
-    request.overrideMimeType("application/json")
-    request.open("GET", file, true)
-    request.onreadystatechange = function() {
-        if (request.readyState == 4 && request.status == "200") {
-            callback(request.responseText)
+
+    //checking if file is a url
+    if (file.includes("http")) {
+        var request = new XMLHttpRequest()
+        request.overrideMimeType("application/json")
+        request.open("GET", file, true)
+        request.onreadystatechange = function() {
+            if (request.readyState == 4 && request.status == "200") {
+                callback(request.responseText)
+            }
         }
+        request.send()
     }
-    request.send()
+
+    //if file is not a url (is artist name), return file
+    else {
+        callback(file)
+    }
 }
 
 //sets user-agent?
@@ -22,15 +31,23 @@ Object.defineProperty(navigator, 'userAgent', {
     get: function () { return 'kpop-shuffle/0.1.0 ( ericahan.38@gmail.com )' }
 });
 
-//nests
-//call: gets artist name
 function bigFunction(file) {
+
+//call: gets artist name
 readFile(file, function(txt) {
-    var artList = String(txt)
-    var artArray = artList.split(",")
-    var artist = randomizer(artArray)
+
+    //do if artist name is received through database url
+    if (file.includes("http")) {
+        var artList = String(txt)
+        var artArray = artList.split(",")
+        var artist = randomizer(artArray)
+    }
+    //do if artist name is received through text input
+    else {
+        var artist = file
+    }
     var artistAmp = artist.replace("&","%26")
-    
+  
     //call: gets artist ID
     readFile("https://beta.musicbrainz.org/ws/2/artist?query="+artistAmp+"&fmt=json", function(json) {
         var data = JSON.parse(json)
@@ -93,4 +110,26 @@ document.getElementById("butMal").addEventListener("click", function() {
 })
 document.getElementById("butPop").addEventListener("click", function() {
     bigFunction("https://chewtle.github.io/kpop-shuffle/database/popular.txt")
+})
+document.getElementById("butInput").addEventListener("click", function() {
+    var inputText = document.getElementById("input").value
+    var yes = 0
+
+    //for loop: checking if input contains ANY alphanumeric values
+    for (i = 0, len = inputText.length; i < len; i++) {
+
+        code = inputText.charCodeAt(i);
+        if (!(code > 47 && code < 58) && // numeric (0-9)
+            !(code > 64 && code < 91) && // upper alpha (A-Z)
+            !(code > 96 && code < 123)) { // lower alpha (a-z)
+                null
+        }
+        else {
+            yes = 1
+            break
+        }
+    }
+    if (yes == 1) {
+        bigFunction(inputText)
+    }
 })
