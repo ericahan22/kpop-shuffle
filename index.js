@@ -136,9 +136,9 @@ function onInput() {
 }
 
 //function: for personalized results
-function onInputName() {
-    var inputText = document.getElementById("inpName").value
-    bigFunction("https://chewtle.github.io/kpop-shuffle/people/"+inputText.toLowerCase().trim()+".txt")
+function onSearch() {
+    var searchText = document.getElementById("search").value
+    bigFunction("https://chewtle.github.io/kpop-shuffle/people/"+searchText+".txt")
 }
 
 //event listeners
@@ -163,9 +163,9 @@ document.getElementById("input").addEventListener("keyup", function(event) {
         onInput()
     }
 })
-document.getElementById("butInpName").addEventListener("click", onInputName)
-document.getElementById("inpName").addEventListener("keyup", function(event) {
+document.getElementById("butSearch").addEventListener("click", onSearch)
+document.getElementById("search").addEventListener("keyup", function(event) {
     if (event.key === "Enter") {
-        onInputName()
+        onSearch()
     }
 })
