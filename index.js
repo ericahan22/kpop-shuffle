@@ -135,6 +135,20 @@ function onInput() {
     }
 }
 
+//function: for personalized results
+function onInputName() {
+    var inputText = document.getElementById("inpName").value
+    if (inputText.toLowerCase() === "franey") {
+        bigFunction("https://chewtle.github.io/kpop-shuffle/people/f22.txt")
+    }
+    else if (inputText.toLowerCase() === "erica") {
+        bigFunction("https://chewtle.github.io/kpop-shuffle/people/me.txt")
+    }
+    else if (inputText.toLowerCase() === "david") {
+        bigFunction("https://chewtle.github.io/kpop-shuffle/people/pporappippam.txt")
+    }
+}
+
 //event listeners
 window.addEventListener("DOMContentLoaded", function() {
     document.getElementById("vid").src=""
@@ -155,5 +169,11 @@ document.getElementById("butInput").addEventListener("click", onInput)
 document.getElementById("input").addEventListener("keyup", function(event) {
     if (event.key === "Enter") {
         onInput()
+    }
+})
+document.getElementById("butInpName").addEventListener("click", onInputName)
+document.getElementById("inpName").addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+        onInputName()
     }
 })
