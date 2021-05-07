@@ -138,15 +138,7 @@ function onInput() {
 //function: for personalized results
 function onInputName() {
     var inputText = document.getElementById("inpName").value
-    if (inputText.toLowerCase() === "franey") {
-        bigFunction("https://chewtle.github.io/kpop-shuffle/people/f22.txt")
-    }
-    else if (inputText.toLowerCase() === "erica") {
-        bigFunction("https://chewtle.github.io/kpop-shuffle/people/me.txt")
-    }
-    else if (inputText.toLowerCase() === "david") {
-        bigFunction("https://chewtle.github.io/kpop-shuffle/people/pporappippam.txt")
-    }
+    bigFunction("https://chewtle.github.io/kpop-shuffle/people/"+inputText.toLowerCase().trim()+".txt")
 }
 
 //event listeners
