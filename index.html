@@ -22,9 +22,15 @@
             <input type="text" id="input" name="input">
             <button type="button" id="butInput" style="font-size:100%">submit</button>
             <div style="height:10px"></div>
-            <label for="inpName">personalized results:</label>
-            <input type="text" id="inpName" name="inpName" placeholder="enter last.fm username">
-            <button type="button" id="butInpName" style="font-size:100%">submit</button>
+            <label for="search">personalized results:</label>
+            <input id="search" type="search" list="usernames" placeholder="enter last.fm username">
+            <datalist id="usernames">
+                <option value="chewtle"></option>
+                <option value="franey_22"></option>
+                <option value="pporappippam"></option>
+            </datalist>
+            <button type="button" id="butSearch" style="font-size:100%">submit</button>
+            </select>
         </div>
         <div style="clear:both; margin:10px">
             <p id="txt" style="font-size:160%;"></p>
