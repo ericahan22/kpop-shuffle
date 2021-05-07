@@ -62,7 +62,7 @@ readFile(file, function(txt) {
                 var data = JSON.parse(json)
 
                 //call: get youtube video id
-                readFile('https://youtube.googleapis.com/youtube/v3/search?part=snippet&q="'+artist+' '+track+'"&key='+data[1], function(json) {
+                readFile('https://youtube.googleapis.com/youtube/v3/search?part=snippet&q="'+artist+'" "'+track+'"&key='+data[1], function(json) {
                     var data = JSON.parse(json)
                     var videoID = data.items[0].id.videoId
                     var embed = "https://www.youtube.com/embed/"+videoID
