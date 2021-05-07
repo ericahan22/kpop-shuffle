@@ -16,6 +16,9 @@ function readFile(file, callback) {
             if (request.readyState == 4 && request.status == "200") {
                 callback(request.responseText)
             }
+            else if (file.includes("youtube") && request.status != "200") {
+                callback(request.status)
+            }
         }
         request.send()
     }
@@ -64,16 +67,21 @@ readFile(file, function(txt) {
         readFile("https://beta.musicbrainz.org/ws/2/release?artist="+artistID+"&inc=release-groups+recordings&fmt=json", function(json) {
             var data = JSON.parse(json)
             const unwanted = ['Interview','Live','DJ-mix']
+            var releaseArr = []
+            var secType = data.releases[i]['release-group']['secondary-types']
+
+            //for loop: gather array of VALID releases by artist
             for (i=0;i<data.releases.length;i++) {
-                var secType = data.releases[i]['release-group']['secondary-types']
                 if (!secType.some(type => unwanted.includes(type)) && data.releases[i].media.length != 0) {
-                    var trkArr = []
-                    for (j=0;j<data.releases[i].media[0].tracks.length;j++) {
-                        trkArr.push(data.releases[i].media[0].tracks[j].title)
-                    }
-                    var albumTitle = data.releases[i].title
-                    break
+                    releaseArr.push(data.releases[i])
                 }
+            }
+            var release = randomizer(releaseArr)
+            var trkArr = []
+
+            //for loop: gather array of tracks from release
+            for (i=0;i<release.media[0].tracks.length;i++) {
+                trkArr.push(release.media[0].tracks[i].title)
             }
             var track = randomizer(trkArr)
 
@@ -84,12 +92,18 @@ readFile(file, function(txt) {
                 //call: get youtube video id
                 readFile('https://youtube.googleapis.com/youtube/v3/search?part=snippet&q="'+artistAmp+'" "'+track+'"&key='+data[1], function(json) {
                     var data = JSON.parse(json)
-                    var videoID = data.items[0].id.videoId
-                    var embed = "https://www.youtube.com/embed/"+videoID
-                    var text = artist+" - "+track
+                    try {
+                        var videoID = data.items[0].id.videoId
+                        var embed = "https://www.youtube.com/embed/"+videoID
+                        var text = artist+" - "+track
 
-                    document.getElementById("vid").src=embed
-                    document.getElementById("txt").innerHTML=text
+                        document.getElementById("vid").src=embed
+                        document.getElementById("txt").innerHTML=text    
+                    }
+                    catch {
+                        var text = artist+" - "+track
+                        document.getElementById("txt").innerHTML=text
+                    }
                 })
             })
         })
