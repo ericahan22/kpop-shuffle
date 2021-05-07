@@ -54,6 +54,8 @@ readFile(file, function(txt) {
         for (i=0;i<data.artists.length;i++) {
             if(data.artists[i].country == "KR") {
                 var artistID = data.artists[i].id
+                artist = data.artists[i].name
+                artistAmp = artist.replace("&","%26")
                 break
             }
         }
