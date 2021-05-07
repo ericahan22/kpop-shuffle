@@ -37,8 +37,8 @@ readFile(file, function(txt) {
         for (i=0;i<data.artists.length;i++) {
             if(data.artists[i].country == "KR") {
                 var artistID = data.artists[i].id
+                break
             }
-            break
         }
 
         //call: get track name
@@ -53,8 +53,8 @@ readFile(file, function(txt) {
                         trkArr.push(data.releases[i].media[0].tracks[j].title)
                     }
                     var albumTitle = data.releases[i].title
+                    break
                 }
-                break
             }
             var track = randomizer(trkArr)
 
