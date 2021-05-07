@@ -111,23 +111,8 @@ readFile(file, function(txt) {
 })
 }
 
-//event listeners
-window.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("vid").src=""
-})
-document.getElementById("butArt").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/artists.txt")
-})
-document.getElementById("butFem").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/female.txt")
-})
-document.getElementById("butMal").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/male.txt")
-})
-document.getElementById("butPop").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/popular.txt")
-})
-document.getElementById("butInput").addEventListener("click", function() {
+//function: for input box
+function onInput() {
     var inputText = document.getElementById("input").value
     var yes = 0
 
@@ -147,5 +132,28 @@ document.getElementById("butInput").addEventListener("click", function() {
     }
     if (yes == 1) {
         bigFunction(inputText)
+    }
+}
+
+//event listeners
+window.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("vid").src=""
+})
+document.getElementById("butArt").addEventListener("click", function() {
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/artists.txt")
+})
+document.getElementById("butFem").addEventListener("click", function() {
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/female.txt")
+})
+document.getElementById("butMal").addEventListener("click", function() {
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/male.txt")
+})
+document.getElementById("butPop").addEventListener("click", function() {
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/popular.txt")
+})
+document.getElementById("butInput").addEventListener("click", onInput)
+document.getElementById("input").addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+        onInput()
     }
 })
