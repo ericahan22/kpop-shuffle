@@ -29,9 +29,10 @@ readFile(file, function(txt) {
     var artList = String(txt)
     var artArray = artList.split(",")
     var artist = randomizer(artArray)
+    var artistAmp = artist.replace("&","%26")
     
     //call: gets artist ID
-    readFile("https://beta.musicbrainz.org/ws/2/artist?query="+artist+"&fmt=json", function(json) {
+    readFile("https://beta.musicbrainz.org/ws/2/artist?query="+artistAmp+"&fmt=json", function(json) {
         var data = JSON.parse(json)
         for (i=0;i<data.artists.length;i++) {
             if(data.artists[i].country == "KR") {
@@ -62,7 +63,7 @@ readFile(file, function(txt) {
                 var data = JSON.parse(json)
 
                 //call: get youtube video id
-                readFile('https://youtube.googleapis.com/youtube/v3/search?part=snippet&q="'+artist+'" "'+track+'"&key='+data[1], function(json) {
+                readFile('https://youtube.googleapis.com/youtube/v3/search?part=snippet&q="'+artistAmp+'" "'+track+'"&key='+data[1], function(json) {
                     var data = JSON.parse(json)
                     var videoID = data.items[0].id.videoId
                     var embed = "https://www.youtube.com/embed/"+videoID
