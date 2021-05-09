@@ -160,10 +160,10 @@ document.getElementById("butPop").addEventListener("click", function() {
 document.getElementById("butNuguAll").addEventListener("click", function() {
     bigFunction("https://chewtle.github.io/kpop-shuffle/database/nuguAll.txt")
 })
-document.getElementById("buNuguFem").addEventListener("click", function() {
+document.getElementById("butNuguFem").addEventListener("click", function() {
     bigFunction("https://chewtle.github.io/kpop-shuffle/database/nuguFem.txt")
 })
-document.getElementById("buNuguMal").addEventListener("click", function() {
+document.getElementById("butNuguMal").addEventListener("click", function() {
     bigFunction("https://chewtle.github.io/kpop-shuffle/database/nuguMal.txt")
 })
 document.getElementById("butInput").addEventListener("click", onInput)
