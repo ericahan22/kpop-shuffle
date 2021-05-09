@@ -67,10 +67,10 @@ readFile(file, function(txt) {
             var data = JSON.parse(json)
             const unwanted = ['Interview','Live','DJ-mix']
             var releaseArr = []
-            var secType = data.releases[i]['release-group']['secondary-types']
-
+            
             //for loop: gather array of VALID releases by artist
             for (i=0;i<data.releases.length;i++) {
+                var secType = data.releases[i]['release-group']['secondary-types']
                 if (!secType.some(type => unwanted.includes(type)) && data.releases[i].media.length != 0) {
                     releaseArr.push(data.releases[i])
                 }
