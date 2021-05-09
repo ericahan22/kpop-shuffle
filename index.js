@@ -57,6 +57,7 @@ readFile(file, function(txt) {
             if(data.artists[i].country == "KR") {
                 var artistID = data.artists[i].id
                 artist = data.artists[i].name
+                console.log(artist)
                 break
             }
         }
