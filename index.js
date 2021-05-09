@@ -157,6 +157,15 @@ document.getElementById("butMal").addEventListener("click", function() {
 document.getElementById("butPop").addEventListener("click", function() {
     bigFunction("https://chewtle.github.io/kpop-shuffle/database/popular.txt")
 })
+document.getElementById("butNuguAll").addEventListener("click", function() {
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/nuguAll.txt")
+})
+document.getElementById("buNuguFem").addEventListener("click", function() {
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/nuguFem.txt")
+})
+document.getElementById("buNuguMal").addEventListener("click", function() {
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/nuguMal.txt")
+})
 document.getElementById("butInput").addEventListener("click", onInput)
 document.getElementById("input").addEventListener("keyup", function(event) {
     if (event.key === "Enter") {
