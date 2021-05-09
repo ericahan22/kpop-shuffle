@@ -148,14 +148,21 @@ window.addEventListener("DOMContentLoaded", function() {
 document.getElementById("butArt").addEventListener("click", function() {
     bigFunction("https://chewtle.github.io/kpop-shuffle/database/artists.txt")
 })
+document.getElementById("butPop").addEventListener("click", function() {
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/popular.txt")
+})
+document.getElementById("butFavs").addEventListener("click", function() {
+    readFile("https://chewtle.github.io/kpop-shuffle/database/favs.json", function(json) {
+        var selVid = randomizer(JSON.parse(json))
+        document.getElementById("vid").src=selVid[1]
+        document.getElementById("txt").innerHTML=selVid[0]
+    })
+})
 document.getElementById("butFem").addEventListener("click", function() {
     bigFunction("https://chewtle.github.io/kpop-shuffle/database/female.txt")
 })
 document.getElementById("butMal").addEventListener("click", function() {
     bigFunction("https://chewtle.github.io/kpop-shuffle/database/male.txt")
-})
-document.getElementById("butPop").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/popular.txt")
 })
 document.getElementById("butNuguAll").addEventListener("click", function() {
     bigFunction("https://chewtle.github.io/kpop-shuffle/database/nuguAll.txt")
