@@ -84,27 +84,34 @@ readFile(file, function(txt) {
             }
             var track = randomizer(trkArr)
 
-            //call: get config.json data
-            readFile("https://chewtle.github.io/kpop-shuffle/config.json", function(json) {
-                var data = JSON.parse(json)
+            //if "don't show video" is checked, then only show text
+            if (document.getElementById("videoCheck").checked) {
+                var text = artist+" - "+track
+                document.getElementById("txt").innerHTML=text
+            } else {
 
-                //call: get youtube video id
-                readFile('https://youtube.googleapis.com/youtube/v3/search?part=snippet&q="'+encodeURIComponent(artist)+'" "'+encodeURIComponent(track)+'"&key='+data[1], function(json) {
+                //call: get config.json data
+                readFile("https://chewtle.github.io/kpop-shuffle/config.json", function(json) {
                     var data = JSON.parse(json)
-                    try {
-                        var videoID = data.items[0].id.videoId
-                        var embed = "https://www.youtube.com/embed/"+videoID
-                        var text = artist+" - "+track
 
-                        document.getElementById("vid").src=embed
-                        document.getElementById("txt").innerHTML=text    
-                    }
-                    catch {
-                        var text = artist+" - "+track
-                        document.getElementById("txt").innerHTML=text
-                    }
+                    //call: get youtube video id
+                    readFile('https://youtube.googleapis.com/youtube/v3/search?part=snippet&q="'+encodeURIComponent(artist)+'" "'+encodeURIComponent(track)+'"&key='+data[1], function(json) {
+                        var data = JSON.parse(json)
+                        try {
+                            var videoID = data.items[0].id.videoId
+                            var embed = "https://www.youtube.com/embed/"+videoID
+                            var text = artist+" - "+track
+
+                            document.getElementById("vid").src=embed
+                            document.getElementById("txt").innerHTML=text    
+                        }
+                        catch {
+                            var text = artist+" - "+track
+                            document.getElementById("txt").innerHTML=text
+                        }
+                    })
                 })
-            })
+            }
         })
     })
 })
