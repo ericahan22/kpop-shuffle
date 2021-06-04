@@ -1,1 +1,1 @@
-9MUSES,AOA,Apink,APRIL,Dal★Shabet,DIA,DREAMCATCHER,ELRIS,FIESTAR,fromis_9,Ga-In,GFRIEND,gugudan,IZ*ONE,Lovelyz,NATURE,OH MY GIRL,Rainbow,Red Velvet,Rocket Punch,SNUPER,SPICA,Stellar,TAEYEON,TWICE,Weeekly,WJSN,YUKIKA
+9MUSES,AOA,Apink,APRIL,CLC,Dal★Shabet,DIA,DREAMCATCHER,ELRIS,EXID,FIESTAR,fromis_9,Ga-In,GFRIEND,Girls’ Generation,Girls’ Generation-TTS,gugudan,GWSN,IZ*ONE,Kim Areum,Lovelyz,NATURE,OH MY GIRL,Rainbow,Rainbow Note,Red Velvet,Rocket Punch,SNUPER,SPICA,Stellar,TAEYEON,TWICE,Weeekly,WJSN,YUKIKA
