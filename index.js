@@ -179,6 +179,7 @@ function onYearInput() {
     if (inputNum === "") {
         return ""
     } else if (Number.isInteger(Number(inputNum) && Number(inputNum) >= 1990 && Number(inputNum) <= currentYear)) {
+        alert(inputNum)
         return inputNum
     } else {
         alert("Please enter a year between 1990 and "+currentYear+".")
