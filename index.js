@@ -173,13 +173,13 @@ function onInput() {
 //function: get and return year from input
 function onYearInput() {
     var inputNum = document.getElementById("year").value
-    alert(inputNum)
     var currentYear = new Date().getFullYear()
 
     //if: input empty -> "", input valid -> input, else ""
     if (inputNum === "") {
         return ""
     } else if (Number.isInteger(Number(inputNum) && Number(inputNum) >= 1990 && Number(inputNum) <= currentYear)) {
+        alert(true)
         return inputNum
     } else {
         alert("Please enter a year between 1990 and "+currentYear+".")
