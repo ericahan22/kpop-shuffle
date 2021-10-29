@@ -34,7 +34,7 @@ Object.defineProperty(navigator, 'userAgent', {
     get: function () { return 'kpop-shuffle/0.1.0 ( ericahan.38@gmail.com )' }
 });
 
-function bigFunction(file) {
+function bigFunction(file, inputYear) {
 
 //call: gets artist name
 readFile(file, function(txt) {
@@ -48,6 +48,7 @@ readFile(file, function(txt) {
     //do if artist name is received through text input
     else {
         var artist = file
+        var artFromInput = true
     }
   
     //call: gets artist ID
@@ -68,13 +69,41 @@ readFile(file, function(txt) {
             const unwanted = ['Interview','Live','DJ-mix']
             var releaseArr = []
             
-            //for loop: gather array of VALID releases by artist
-            for (i=0;i<data.releases.length;i++) {
-                var secType = data.releases[i]['release-group']['secondary-types']
-                if (!secType.some(type => unwanted.includes(type)) && data.releases[i].media.length != 0) {
-                    releaseArr.push(data.releases[i])
+            //if: inputYear or not
+            if (inputYear === "") {
+
+                //for loop: gather array of VALID releases by artist
+                for (i=0;i<data.releases.length;i++) {
+                    var secType = data.releases[i]['release-group']['secondary-types']
+
+                    if (!secType.some(type => unwanted.includes(type)) && data.releases[i].media.length != 0) {
+                        releaseArr.push(data.releases[i])
+                    }
+                }
+            } else {
+
+                //for loop: gather array of VALID releases (type and year) by artist
+                for (i=0; i<data.releases.length;i++) {
+                    var secType = data.releases[i]['release-group']['secondary-types']
+                    var releaseDate = secType.first-release-date
+                    var releaseYear = releaseDate.substr(0, releaseDate.indexOf('-'))
+
+                    if (!secType.some(type => unwanted.includes(type)) && inputYear === releaseYear && data.releases[i].media.length != 0) {
+                        releaseArr.push(data.releases[i])
+                    }
+                }
+
+                //if releaseArr is empty, return, otherwise call bigFunction again to randomize a different artist
+                if (releaseArr.length === 0) {
+                    if (artFromInput === true) {
+                        alert("There are no releases from this year, please try again.")
+                        return
+                    } else {
+                        bigFunction(file, inputYear)
+                    }
                 }
             }
+
             var release = randomizer(releaseArr)
             var trkArr = []
 
@@ -137,14 +166,30 @@ function onInput() {
         }
     }
     if (yes == 1) {
-        bigFunction(inputText)
+        bigFunction(inputText, onYearInput())
+    }
+}
+
+//function: get and return year from input
+function onYearInput() {
+    var inputNum = document.getElementById("year").value
+    var currentYear = new Date().getFullYear()
+
+    //if: input empty -> "", input valid -> input, else ""
+    if (inputNum === "") {
+        return ""
+    } else if (Number.isInteger(Number(inputNum) && Number(inputNum) >= 1990 && Number(inputNum) <= currentYear)) {
+        return inputNum
+    } else {
+        alert("Please enter a year between 1990 and "+currentYear+".")
+        return ""
     }
 }
 
 //function: for personalized results
 function onSearch() {
     var searchText = document.getElementById("search").value
-    bigFunction("https://chewtle.github.io/kpop-shuffle/people/"+searchText+".txt")
+    bigFunction("https://chewtle.github.io/kpop-shuffle/people/"+searchText+".txt", onYearInput())
 }
 
 //event listeners
@@ -152,10 +197,10 @@ window.addEventListener("DOMContentLoaded", function() {
     document.getElementById("vid").src=""
 })
 document.getElementById("butArt").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/artists.txt")
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/artists.txt", onYearInput())
 })
 document.getElementById("butPop").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/popular.txt")
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/popular.txt", onYearInput())
 })
 document.getElementById("butFavs").addEventListener("click", function() {
     readFile("https://chewtle.github.io/kpop-shuffle/database/favs.json", function(json) {
@@ -165,19 +210,19 @@ document.getElementById("butFavs").addEventListener("click", function() {
     })
 })
 document.getElementById("butFem").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/female.txt")
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/female.txt", onYearInput())
 })
 document.getElementById("butMal").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/male.txt")
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/male.txt", onYearInput())
 })
 document.getElementById("butNuguAll").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/nuguAll.txt")
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/nuguAll.txt", onYearInput())
 })
 document.getElementById("butNuguFem").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/nuguFem.txt")
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/nuguFem.txt", onYearInput())
 })
 document.getElementById("butNuguMal").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/nuguMal.txt")
+    bigFunction("https://chewtle.github.io/kpop-shuffle/database/nuguMal.txt", onYearInput())
 })
 document.getElementById("butInput").addEventListener("click", onInput)
 document.getElementById("input").addEventListener("keyup", function(event) {
