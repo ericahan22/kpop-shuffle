@@ -13,7 +13,7 @@ PRIORITY:
         nugu (t/f)
         popular (t/f)
         last.fm (array of usernames)
-    idea: iterate in artists.txt, for each element, find in musicbrainz gender, start year, end year, type (skip undefined elements)
+    idea: iterate in artists.txt, for each element, find in musicbrainz: gender, type, start/end years (for groups) (skip undefined elements)
 2. change buttons to tick boxes, release shown must fulfill all checked requirements
     two text inputs for year range e.g. (____)-(____) but in html
 3. decades: check that release year of release matches chosen decade
