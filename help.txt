@@ -3,19 +3,19 @@ commit in github.dev (change com to dev in github file)
 pull changes in repl.it to view site
 
 PRIORITY:
-1. change lists to json structures (keep all.txt)
+1. change lists to json structures using existing musicbrainz database? (keep all.txt and artists.txt)
     group name
         artists (t/f)
-        gender (f/m/null)
+        gender (f/m/coed)
+        start year active (num, self-entry)
+        end year active (num/null, self-entry) null=presently active
+        type (solo/group)
         nugu (t/f)
         popular (t/f)
-        decade (array, 1-4)
-            1: 97-04
-            2: 05-11
-            3: 12-18
-            4: 19-21
         last.fm (array of usernames)
+    idea: iterate in artists.txt, for each element, find in musicbrainz gender, start year, end year, type (skip undefined elements)
 2. change buttons to tick boxes, release shown must fulfill all checked requirements
+    two text inputs for year range e.g. (____)-(____) but in html
 3. decades: check that release year of release matches chosen decade
 
 NEXT:
