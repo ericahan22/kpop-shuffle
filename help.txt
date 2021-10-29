@@ -5,7 +5,6 @@ pull changes in repl.it to view site
 PRIORITY:
 1. change lists to json structures using existing musicbrainz database? (keep all.txt and artists.txt)
     group name
-        artists (t/f)
         gender (f/m/coed)
         start year active (num, self-entry)
         end year active (num/null, self-entry) null=presently active

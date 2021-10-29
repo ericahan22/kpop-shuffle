@@ -1,1 +1,1174 @@
-
+{
+    "artists": [
+        {
+            "name":"(G)I-DLE",
+            "gender":"f",
+            "start year":2018,
+            "end year":null,
+            "type":"group",
+            "related":["Jeon So-yeon","YUQI"],
+            "genre":["Dance-pop","Electropop"],
+            "label":["Cube"],
+            "nugu":false,
+            "popular":true,
+            "last.fm":["pporappippam","chewtle"]
+        },
+        {
+            "name":"1TEAM",
+            "gender":"m",
+            "start year":2019,
+            "end year":2021,
+            "type":"group",
+            "related":[],
+            "genre":[],
+            "label":["Live Works"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"1THE9",
+            "gender":"m",
+            "start year":2019,
+            "end year":2020,
+            "type":"group",
+            "related":[],
+            "genre":[],
+            "label":["MBK"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"2AM",
+            "gender":"m",
+            "start year":2008,
+            "end year":null,
+            "type":"group",
+            "related":[],
+            "genre":[],
+            "label":["JYP"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"2NE1",
+            "gender":"f",
+            "start year":2009,
+            "end year":2016,
+            "type":"group",
+            "related":["PARK BOM","CL","Minzy"],
+            "genre":["Dance-pop","Electropop"],
+            "label":["YG"],
+            "nugu":false,
+            "popular":true,
+            "last.fm":[]
+        },
+        {
+            "name":"2PM",
+            "gender":"m",
+            "start year":2008,
+            "end year":null,
+            "type":"group",
+            "related":["JUN. K","Junho"],
+            "genre":["Contemporary R&B"],
+            "label":["JYP"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":["franey_22"]
+        },
+        {
+            "name":"2YOON",
+            "gender":"f",
+            "start year":2013,
+            "end year":2016,
+            "type":"group",
+            "related":["4minute","Jeon Ji Yoon"],
+            "genre":[],
+            "label":["Cube"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"3RACHA",
+            "gender":"m",
+            "start year":2017,
+            "end year":null,
+            "type":"group",
+            "related":["Stray Kids"],
+            "genre":["Hip Hop"],
+            "label":["JYP"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"3YE",
+            "gender":"f",
+            "start year":2019,
+            "end year":null,
+            "type":"group",
+            "related":[],
+            "genre":["Dance-pop","Trap (EDM)"],
+            "label":["GH"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"4minute",
+            "gender":"f",
+            "start year":2009,
+            "end year":2016,
+            "type":"group",
+            "related":["2YOON","Jeon Ji Yoon","HyunA"],
+            "genre":["Electropop","Dance-pop"],
+            "label":["Cube"],
+            "nugu":false,
+            "popular":true,
+            "last.fm":["chewtle"]
+        },
+        {
+            "name":"4TEN",
+            "gender":"f",
+            "start year":2014,
+            "end year":null,
+            "type":"group",
+            "related":[],
+            "genre":[],
+            "label":["Jungle"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"9MUSES",
+            "gender":"f",
+            "start year":2010,
+            "end year":2019,
+            "type":"group",
+            "related":["9MUSES A","Park Kyungri"],
+            "genre":["Dance-pop","Electropop"],
+            "label":["Star Empire"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":["chewtle","pporappippam"]
+        },
+        {
+            "name":"9MUSES A",
+            "gender":"f",
+            "start year":2016,
+            "end year":2019,
+            "type":"group",
+            "related":["9MUSES","Park Kyungri"],
+            "genre":[],
+            "label":["Star Empire"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"15&",
+            "gender":"f",
+            "start year":2012,
+            "end year":2015,
+            "type":"group",
+            "related":["Yerin Baek","Jamie"],
+            "genre":["Contemporary R&B"],
+            "label":["JYP"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"100%",
+            "gender":"m",
+            "start year":2012,
+            "end year":2021,
+            "type":"group",
+            "related":[],
+            "genre":["Dance-pop","Contemporary R&B"],
+            "label":["TOP"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"A.C.E",
+            "gender":"m",
+            "start year":2017,
+            "end year":null,
+            "type":"group",
+            "related":[],
+            "genre":["Electropop","Dance-pop"],
+            "label":["Swing"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":["franey_22"]
+        },
+        {
+            "name":"AB6IX",
+            "gender":"m",
+            "start year":2019,
+            "end year":null,
+            "type":"group",
+            "related":[],
+            "genre":["Dance-pop"],
+            "label":["Brand New"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"aespa",
+            "gender":"f",
+            "start year":2020,
+            "end year":null,
+            "type":"group",
+            "related":[],
+            "genre":["Electropop","Pop Rap"],
+            "label":["SM"],
+            "nugu":false,
+            "popular":true,
+            "last.fm":[]
+        },
+        {
+            "name":"After School",
+            "gender":"f",
+            "start year":2009,
+            "end year":2015,
+            "type":"group",
+            "related":["Orange Caramel"],
+            "genre":["Dance-pop"],
+            "label":["Pledis"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":["chewtle"]
+        },
+        {
+            "name":"Ailee",
+            "gender":"f",
+            "start year":2011,
+            "end year":null,
+            "type":"solo",
+            "related":[],
+            "genre":["Contemporary R&B","Dance-pop"],
+            "label":["THE L1VE"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":["chewtle"]
+        },
+        {
+            "name":"AKMU",
+            "gender":"coed",
+            "start year":2012,
+            "end year":null,
+            "type":"group",
+            "related":["Lee Suhyun"],
+            "genre":["Folk Pop"],
+            "label":["YG"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"AleXa",
+            "gender":"f",
+            "start year":2019,
+            "end year":null,
+            "type":"solo",
+            "related":[],
+            "genre":["Pop Rap","Electropop"],
+            "label":["ZB"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"Amber Liu",
+            "gender":"f",
+            "start year":2009,
+            "end year":null,
+            "type":"solo",
+            "related":["f(x)"],
+            "genre":["Dance-pop","Future House"],
+            "label":["SM"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"ANDA",
+            "gender":"f",
+            "start year":2012,
+            "end year":null,
+            "type":"solo",
+            "related":[],
+            "genre":["Dance-pop","Contemporary R&B"],
+            "label":["YG"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"AOA",
+            "gender":"f",
+            "start year":2012,
+            "end year":null,
+            "type":"group",
+            "related":["AOA BLACK","AOA CREAM","Jimin"],
+            "genre":["Dance-pop"],
+            "label":["FNC"],
+            "nugu":false,
+            "popular":true,
+            "last.fm":["chewtle","pporappippam"]
+        },
+        {
+            "name":"AOA BLACK",
+            "gender":"f",
+            "start year":2013,
+            "end year":2020,
+            "type":"group",
+            "related":["AOA","Jimin"],
+            "genre":[],
+            "label":["FNC"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"AOA CREAM",
+            "gender":"f",
+            "start year":2016,
+            "end year":null,
+            "type":"group",
+            "related":["AOA"],
+            "genre":["Bubblegum","Dance-pop"],
+            "label":["FNC"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"Apink",
+            "gender":"f",
+            "start year":2011,
+            "end year":null,
+            "type":"group",
+            "related":["Jung Eun-ji","Kim Nam Joo","Oh Ha-young"],
+            "genre":["Dance-pop"],
+            "label":["Play M"],
+            "nugu":false,
+            "popular":true,
+            "last.fm":["chewtle","pporappippam","franey_22"]
+        },
+        {
+            "name":"APRIL",
+            "gender":"f",
+            "start year":2015,
+            "end year":null,
+            "type":"group",
+            "related":[],
+            "genre":["Dance-pop","Synthpop"],
+            "label":["DSP"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":["pporappippam","chewtle"]
+        },
+        {
+            "name":"ASTRO",
+            "gender":"m",
+            "start year":2016,
+            "end year":null,
+            "type":"group",
+            "related":["MOONBIN & SANHA"],
+            "genre":["Dance-pop","Electropop"],
+            "label":["Fantagio"],
+            "nugu":false,
+            "popular":true,
+            "last.fm":["franey_22"]
+        },
+        {
+            "name":"ATEEZ",
+            "gender":"m",
+            "start year":2018,
+            "end year":null,
+            "type":"group",
+            "related":[],
+            "genre":["Electropop","Dance-pop"],
+            "label":["KQ"],
+            "nugu":false,
+            "popular":true,
+            "last.fm":["franey_22","chewtle"]
+        },
+        {
+            "name":"B.A.P",
+            "gender":"m",
+            "start year":2012,
+            "end year":2019,
+            "type":"group",
+            "related":["Bang Yong-guk"],
+            "genre":[],
+            "label":["TS"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"B.I.G",
+            "gender":"m",
+            "start year":2014,
+            "end year":null,
+            "type":"group",
+            "related":[],
+            "genre":[],
+            "label":["GH"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"B1A4",
+            "gender":"m",
+            "start year":2011,
+            "end year":2021,
+            "type":"group",
+            "related":[],
+            "genre":["Contemporary R&B"],
+            "label":["WM"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"Baby V.O.X",
+            "gender":"f",
+            "start year":1997,
+            "end year":2006,
+            "type":"group",
+            "related":[],
+            "genre":[],
+            "label":["DR"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"BAE173",
+            "gender":"m",
+            "start year":2020,
+            "end year":2021,
+            "type":"group",
+            "related":[],
+            "genre":[],
+            "label":["MBK"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"Baek A-yeon",
+            "gender":"f",
+            "start year":2012,
+            "end year":null,
+            "type":"solo",
+            "related":[],
+            "genre":["Contemporary R&B"],
+            "label":["JYP"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"BAEKHYUN",
+            "gender":"m",
+            "start year":2012,
+            "end year":2021,
+            "type":"solo",
+            "related":["EXO","EXO-K","EXO-CBX","SuperM"],
+            "genre":["Contemporary R&B","Dance-pop"],
+            "label":["SM"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"BAMBAM",
+            "gender":"m",
+            "start year":2014,
+            "end year":null,
+            "type":"solo",
+            "related":["GOT7"],
+            "genre":[],
+            "label":["Abyss"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"Bang Yong-guk",
+            "gender":"m",
+            "start year":2008,
+            "end year":null,
+            "type":"solo",
+            "related":["B.A.P"],
+            "genre":[],
+            "label":["Consent"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"BASTARZ",
+            "gender":"m",
+            "start year":2015,
+            "end year":null,
+            "type":"group",
+            "related":["Block B"],
+            "genre":[],
+            "label":["KQ"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"BEAST",
+            "gender":"m",
+            "start year":2009,
+            "end year":2016,
+            "type":"group",
+            "related":["Highlight"],
+            "genre":[],
+            "label":["Cube"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"BerryGood",
+            "gender":"f",
+            "start year":2014,
+            "end year":2021,
+            "type":"group",
+            "related":["BerryGood Heart Heart"],
+            "genre":["Dance-pop"],
+            "label":["Asia Bridge"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":["franey_22","chewtle"]
+        },
+        {
+            "name":"BerryGood Heart Heart",
+            "gender":"f",
+            "start year":2018,
+            "end year":2018,
+            "type":"group",
+            "related":["BerryGood"],
+            "genre":[],
+            "label":["Asia Bridge"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"BESTie",
+            "gender":"f",
+            "start year":2013,
+            "end year":2016,
+            "type":"group",
+            "related":[],
+            "genre":["Dance-pop","Electropop"],
+            "label":["YNB"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"BIBI",
+            "gender":"f",
+            "start year":2017,
+            "end year":null,
+            "type":"solo",
+            "related":[],
+            "genre":["Contemporary R&B","Alternative R&B"],
+            "label":["Feel Ghood"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":["pporappippam"]
+        },
+        {
+            "name":"BIGBANG",
+            "gender":"m",
+            "start year":2006,
+            "end year":null,
+            "type":"group",
+            "related":["Taeyang","G-Dragon","SeungRi"],
+            "genre":["Electropop","Pop Rap"],
+            "label":["YG"],
+            "nugu":false,
+            "popular":true,
+            "last.fm":[]
+        },
+        {
+            "name":"BLACKPINK",
+            "gender":"f",
+            "start year":2016,
+            "end year":null,
+            "type":"group",
+            "related":["JENNIE","ROSÉ","LISA"],
+            "genre":["Dance-pop","Pop Rap"],
+            "label":["YG"],
+            "nugu":false,
+            "popular":true,
+            "last.fm":["franey_22","chewtle"]
+        },
+        {
+            "name":"Blackswan",
+            "gender":"f",
+            "start year":2011,
+            "end year":null,
+            "type":"group",
+            "related":[],
+            "genre":["Dance-pop","Electropop"],
+            "label":["DR"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"Block B",
+            "gender":"m",
+            "start year":2011,
+            "end year":null,
+            "type":"group",
+            "related":["BASTARZ","ZICO"],
+            "genre":["Pop Rap"],
+            "label":["KQ"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"BoA",
+            "gender":"f",
+            "start year":2000,
+            "end year":null,
+            "type":"solo",
+            "related":[],
+            "genre":["Dance-pop"],
+            "label":["SM"],
+            "nugu":false,
+            "popular":true,
+            "last.fm":["chewtle"]
+        },
+        {
+            "name":"BOBBY",
+            "gender":"m",
+            "start year":2013,
+            "end year":null,
+            "type":"solo",
+            "related":["iKON","MOBB"],
+            "genre":["Pop Rap"],
+            "label":["YG"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"Bolbbalgan4",
+            "gender":"f",
+            "start year":2016,
+            "end year":null,
+            "type":"solo",
+            "related":[],
+            "genre":["Contemporary R&B"],
+            "label":["Shofar"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"BOYFRIEND",
+            "gender":"m",
+            "start year":2011,
+            "end year":2019,
+            "type":"group",
+            "related":[],
+            "genre":["Dance-pop"],
+            "label":["Starship"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"Brave Girls",
+            "gender":"f",
+            "start year":2011,
+            "end year":null,
+            "type":"group",
+            "related":[],
+            "genre":["Dance-pop","Contemporary R&B"],
+            "label":["Brave"],
+            "nugu":false,
+            "popular":true,
+            "last.fm":["pporappippam","chewtle"]
+        },
+        {
+            "name":"Brown Eyed Girls",
+            "gender":"f",
+            "start year":2006,
+            "end year":null,
+            "type":"group",
+            "related":["Miryo","Ga-In"],
+            "genre":["Electropop","Dance-pop"],
+            "label":["APOP"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":["chewtle"]
+        },
+        {
+            "name":"BTOB",
+            "gender":"m",
+            "start year":2012,
+            "end year":null,
+            "type":"group",
+            "related":["BTOB-BLUE","BTOB 4U","Lee Min-hyuk","Lee Chang-sub","PENIEL","Jung Il-hoon"],
+            "genre":[],
+            "label":["Cube"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":["chewtle","franey_22"]
+        },
+        {
+            "name":"BTOB-BLUE",
+            "gender":"m",
+            "start year":2016,
+            "end year":null,
+            "type":"group",
+            "related":["BTOB","Lee Chang-sub"],
+            "genre":[],
+            "label":["Cube"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"BTOB 4U",
+            "gender":"m",
+            "start year":2020,
+            "end year":null,
+            "type":"group",
+            "related":["BTOB","Lee Min-hyuk","Lee Chang-sub","PENIEL"],
+            "genre":[],
+            "label":["Cube"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"BTS",
+            "gender":"m",
+            "start year":2013,
+            "end year":null,
+            "type":"group",
+            "related":["SUGA","j-hope","RM"],
+            "genre":["Dance-pop","Electropop"],
+            "label":["Big Hit"],
+            "nugu":false,
+            "popular":true,
+            "last.fm":["pporappippam","franey_22","chewtle"]
+        },
+        {
+            "name":"bugAboo",
+            "gender":"f",
+            "start year":2021,
+            "end year":null,
+            "type":"group",
+            "related":[],
+            "genre":[],
+            "label":["A team"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"BUSTERS",
+            "gender":"f",
+            "start year":2017,
+            "end year":null,
+            "type":"group",
+            "related":[],
+            "genre":["Dance-pop"],
+            "label":["Marbling"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"BVNDIT",
+            "gender":"f",
+            "start year":2019,
+            "end year":null,
+            "type":"group",
+            "related":[],
+            "genre":["Dance-pop","Contemporary R&B"],
+            "label":["MNH"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"C-CLOWN",
+            "gender":"f",
+            "start year":2012,
+            "end year":2015,
+            "type":"group",
+            "related":[],
+            "genre":[],
+            "label":["Yedang"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"CHANYEOL",
+            "gender":"m",
+            "start year":2012,
+            "end year":null,
+            "type":"solo",
+            "related":["EXO","EXO-K","EXO-SC"],
+            "genre":["Contemporary R&B"],
+            "label":["SM"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"CHECKMATE",
+            "gender":"coed",
+            "start year":2019,
+            "end year":null,
+            "type":"group",
+            "related":[],
+            "genre":[],
+            "label":["GRACE COMPANY"],
+            "nugu":true,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"CHEEZE",
+            "gender":"f",
+            "start year":2011,
+            "end year":null,
+            "type":"solo",
+            "related":[],
+            "genre":["Indie Pop","Contemporary R&B"],
+            "label":["Magic Strawberry"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":"CHEN",
+            "gender":"m",
+            "start year":2011,
+            "end year":null,
+            "type":"solo",
+            "related":["EXO-K","EXO-CBX"],
+            "genre":[],
+            "label":["SM"],
+            "nugu":false,
+            "popular":false,
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },
+        {
+            "name":
+            "gender":
+            "start year":
+            "end year":
+            "type":
+            "related":[],
+            "genre":[],
+            "label":[],
+            "nugu":
+            "popular":
+            "last.fm":[]
+        },        
+    ]
+}
