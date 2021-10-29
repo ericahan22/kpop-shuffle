@@ -1,7 +1,28 @@
+EDITING:
+commit in github.dev (change com to dev in github file)
+pull changes in repl.it to view site
+
+PRIORITY:
+1. change lists to json structures (keep all.txt)
+    group name
+        artists (t/f)
+        gender (f/m/null)
+        nugu (t/f)
+        popular (t/f)
+        decade (array, 1-4)
+            1: 97-04
+            2: 05-11
+            3: 12-18
+            4: 19-21
+        last.fm (array of usernames)
+2. change buttons to tick boxes, release shown must fulfill all checked requirements
+3. decades: check that release year of release matches chosen decade
+
 NEXT:
 1. history list for button presses: append results to array and display
 2. playlist maker: button adds current song to array >> can then export to spotify/youtube playlist
     look up spotify track ids in bulk >> interate through array
+3. narrow decades to specific year
 
 REMINDERS:
 cd <this-folder>
