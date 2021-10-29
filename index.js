@@ -75,6 +75,7 @@ readFile(file, function(txt) {
                 //for loop: gather array of VALID releases by artist
                 for (i=0;i<data.releases.length;i++) {
                     var secType = data.releases[i]['release-group']['secondary-types']
+                    alert(secType)
 
                     if (!secType.some(type => unwanted.includes(type)) && data.releases[i].media.length != 0) {
                         releaseArr.push(data.releases[i])
@@ -85,7 +86,6 @@ readFile(file, function(txt) {
                 //for loop: gather array of VALID releases (type and year) by artist
                 for (i=0; i<data.releases.length;i++) {
                     var secType = data.releases[i]['release-group']['secondary-types']
-                    alert(secType)
                     var releaseDate = secType['first-release-date']
                     var releaseYear = releaseDate.substr(0, releaseDate.indexOf('-'))
 
