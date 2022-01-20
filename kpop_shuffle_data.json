@@ -1,0 +1,2582 @@
+{
+  "1": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "(G)I‐DLE": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "15&": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "1TEAM": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "1THE9": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "24K": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "2AM": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "2NE1": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "2PM": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "2YOON": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "3YE": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "4minute": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "4TEN": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "A.C.E": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "AB6IX": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "aespa": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "After School": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "Ailee": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "AKMU": {
+    "gender": 0,
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "AleXa": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Amber Liu": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "ANDA": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "AOA": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "AOA BLACK": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "AOA CREAM": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Apink": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "APOKI": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "APRIL": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "ARIAZ": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Arran": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "ASTRO": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "ATEEZ": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "B.A.P": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "B.I.G": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "B1A4": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Baby V.O.X": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SUZY": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BAE173": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Baek A-yeon": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BAEKHYUN": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BAMBAM": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Minah": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Bang Yong-guk": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BASTARZ": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BDC": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BEAST": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BerryGood": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BerryGood Heart Heart": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BESTie": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BIBI": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BIGBANG": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Billlie": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BLACKPINK": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 1,
+    "underrated?": 0
+  },
+  "Blackswan": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Block B": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BoA": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Bolbbalgan4": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BOYFRIEND": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BgA": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Boys Republic": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Brave Girls": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Brown Eyed Girls": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "BTOB": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BTOB 4U": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BTOB-BLUE": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BTS": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 1,
+    "underrated?": 0
+  },
+  "bugAboo": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BUSTERS": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "BVNDIT": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "CHEEZE": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "CHEN": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Cherry Bullet": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "Yena": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "CHUNG HA": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 1,
+    "underrated?": 0
+  },
+  "cignature": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Ciipher": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "CIX": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "CL": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "CLC": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "CNBLUE": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "CocoSori": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "COED School": {
+    "gender": 0,
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "CRAVITY": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Crayon Pop": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "CROSS GENE": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "D-CRUNCH": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "D.O.": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "D1CE": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Dal★Shabet": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "DALsooobin": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Dareharu": {
+    "gender": 0,
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "DAVICHI": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "DAWN": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "DAY6": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "DIA": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "DONGKIZ": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "dosii": {
+    "gender": 0,
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "DREAMCATCHER": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "DreamNote": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "DRIPPIN": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "ELRIS": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "ENHYPEN": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "EPEX": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "DAY6 (Even of Day)": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "EVERGLOW": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "EXID": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "EXO": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "EXO-CBX": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "EXO-K": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "EXO-SC": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Eyedi": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "F-ve Dolls": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "F.Cuz": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "FTISLAND": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "f(x)": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "FANATICS": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "FAVORITE": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Fei": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "FIESTAR": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Fin.K.L": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "fromis_9": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "G-Dragon": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "G-reyish": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "G.NA": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Gavy NJ": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "GD&TOP": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "GFRIEND": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 1,
+    "underrated?": 0
+  },
+  "GHOST9": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Girl's Day": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Girls' Generation": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Girls' Generation-TTS": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Golden Child": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "GOT the beat": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "GOT7": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "gugudan": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "SEMINA": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "GWSN": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "H.O.T.": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "H&D": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Ha Sung-woon": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "HA:TFELT": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "HALO": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Heize": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "HELLOVENUS": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "HENRY": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "HI SUHYUN": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Highlight": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "HINAPIA": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "HISTORY": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Hong Jin Young": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "HOT ISSUE": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "HOTSHOT": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Lee Min-hyuk": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Hwa Sa": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Hyolyn": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "HYO": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "HyunA": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "I.O.I": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "iKON": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Jung Il-hoon": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "IMFACT": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "IN2IT": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "INFINITE": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "INFINITE H": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "ITZY": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 1,
+    "underrated?": 0
+  },
+  "IU": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 1,
+    "underrated?": 0
+  },
+  "IVE": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "IZ": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "IZ*ONE": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "j-hope": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 1,
+    "underrated?": 0
+  },
+  "Park Jin Young": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Jamie": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Jay B": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "JBJ": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "JBJ95": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "JENNIE": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Jeon Ji Yoon": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Jeon So-yeon": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Jung Eun-ji": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Jung Se-woon": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Jessi": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Jessica": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Jewelry": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Jimin": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "JJ Project": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Jo Yu-ri": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "JONGHYUN": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "JOY": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Jun Hyoseong": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "JUN. K": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Junho": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Jus2": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "JYJ": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "K.Will": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "K/DA": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "KAI": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "KANG DANIEL": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Kang Hye-won": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "KARA": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "KARD": {
+    "gender": 0,
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "KATIE": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "KEEMBO": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "Kep1er": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "KEY": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Kim Dong-han": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Heechul": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Kim Jae-hwan": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Kim Jae Joong": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Kim Nam Joo": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Kim Se Jeong": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Kim Sung-kyu": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Kim Woo-seok": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "KNK (band)": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Kriesha Chu": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Kwon Eun-bi": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Kyuhyun": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "LABOUM": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "LADIES' CODE": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "LAYSHA": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "LEEBADA": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "LEE HI": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Lee Hong Gi": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Lee Hyori": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Lee Suhyun": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Lightsum": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "LISA": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Longguo&Shihyun": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "LOONA": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "LOONA 1/3": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "LOONA / ODD EYE CIRCLE": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "LOONA / yyxy": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Lovelyz": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "LUNA": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "LUNARSOLAR": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "M.O.N.T": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "M&D": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "MADTOWN": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "MAMAMOO": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Max Changmin": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "MBLAQ": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "MCND": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "MELODYDAY": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "MINO": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Minseo": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Minzy": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "MIRAE": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Miryo": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "miss A": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "MJ": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "MOBB": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "MOMOLAND": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "MONSTA X": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "MOONBIN & SANHA": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Moon Byul": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "MXM": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "N.Flying": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "NARSHA": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "NATTY": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "NATURE": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "NC.A": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "NCT": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 1,
+    "underrated?": 0
+  },
+  "NCT 127": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "NCT DREAM": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "NCT U": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "NeonPunch": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "9MUSES": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "9MUSES A": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "NU'EST": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "NU'EST W": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "OGUOGU": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Oh Ha-young": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "OH MY GIRL": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "OH MY GIRL BANHANA": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Girls’ Generation-Oh!GG": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "OMEGA X": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "ONEUS": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "ONEW": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "ONEWE": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "ONF": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "OnlyOneOf": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Orange Caramel": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "P1Harmony": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "PARK BOM": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Park Boram": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Park Ji-hoon": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "PENTAGON": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "PinkFantasy": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "PIXY": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "PRISTIN": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "PRISTIN V": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "PRODUCE 101": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "PRODUCE 48": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Punch": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "PURPLE K!SS": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Purplebeck": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "RAIN": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Rainbow": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "Rainbow Blaxx": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Red Velvet - IRENE & SEULGI": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Red Velvet": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 1,
+    "underrated?": 0
+  },
+  "REFUND SISTERS": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "RM": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Rocket Punch": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Roh Ji-hoon": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "ROMEO": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "ROSÉ": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 1,
+    "underrated?": 0
+  },
+  "Rothy": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Ryeowook": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "S.E.S.": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SAAY": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Samuel": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SATURDAY": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SECHSKIES": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Secret": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SECRET NMBER": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Seo Eun-kwang": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Seo Taiji & Boys": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SEOHYUN": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "SEVENTEEN": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 1,
+    "underrated?": 0
+  },
+  "SF9": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SG Wannabe": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SHANNON": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SHINee": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Shinhwa": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SISTAR": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SISTAR19": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "S.M. THE BALLAD": {
+    "gender": 0,
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SNUPER": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SOLE": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "JEON SOMI": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SONAMOO": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Ga-In": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Song Ji-eun": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "소리": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SOYOU": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SPICA": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SPICA.S": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SS501": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SSAK3": {
+    "gender": 0,
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "STAYC": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Stellar": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "Strawberry Milk": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Stray Kids": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 1,
+    "underrated?": 0
+  },
+  "SUGA": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 1,
+    "underrated?": 0
+  },
+  "SUHO": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SULLI": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SUNMI": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Sunny Hill": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SUPER JUNIOR": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SUPER JUNIOR-D&E": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SUPER JUNIOR HAPPY": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SUPER JUNIOR-K.R.Y.": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SUPER JUNIOR-T": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SuperM": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "SURAN": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "T-ARA": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "T-ARA N4": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "T1419": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "TAEMIN": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Taeyang": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "TAEYEON": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "TAHITI": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "TEEN TOP": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "THE BOYZ": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 1,
+    "underrated?": 0
+  },
+  "The Rose": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Tiffany Young": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "TOO": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Toheart": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "TOMORROW X TOGETHER": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "TRCNG": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "TREASURE": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "TRI.BE": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Triple H": {
+    "gender": 0,
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Trouble Maker": {
+    "gender": 0,
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "TopSecret": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "TVXQ!": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "TWICE": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 1,
+    "underrated?": 0
+  },
+  "U-KISS": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "U-Know Yunho": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Uhm Jung Hwa": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "UNB": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "UNI.T": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "UNIQ": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "UP10TION": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "UZA": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "VARSITY": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "VAV": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "VERIVERY": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "VICTON": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "VIXX": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "VIXX LR": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Wanna One": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Wassup": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "We Girls": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Weeekly": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "WEi": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Weki Meki": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "WENDY": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Whee In": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "WINNER": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "WJMK": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "WJSN": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "WJSN CHOCOME": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "WJSN THE BLACK": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 1
+  },
+  "Wonder Girls": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "WONHO": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "woo!ah!": {
+    "gender": "f",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "WOODZ": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "X1": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Xdinary Heroes ": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Topp Dogg": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "XIA": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Yerin Baek": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Yesung": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "YEZI": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "YooA": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "YoonA": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "YOUHA": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "YOUNGJAE": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Younha": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Younique Unit": {
+    "gender": 0,
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Yubin": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "YUGYEOM": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "YUJU": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "YUKIKA": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "YUQI": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "YURI": {
+    "gender": "f",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "ZE:A": {
+    "gender": "m",
+    "solo?": 0,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "Zhou Mi": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  },
+  "ZICO": {
+    "gender": "m",
+    "solo?": 1,
+    "popular?": 0,
+    "underrated?": 0
+  }
+}
