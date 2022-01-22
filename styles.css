@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap);
+
+body {
+    padding-left: 140px;
+    padding-right: 100px;
+
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+}
+h1 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 500;
+    font-size: 40px;   
+    padding-top: 40px;
+    margin: 0;
+}
+
+p.subhead {
+    margin: 0;
+    padding-bottom: 20px;
+}
+p.info-line {
+    font-size: 30px;
+    margin-top: 15px;
+}
+p.caption {
+    margin-top:5px;
+    margin-bottom:0;
+}
+p.option-head {
+    font-size:18px;
+    margin-top:0;
+    margin-bottom:5px;
+}
+
+span.album-text {
+    font-size:25px;
+}
+span.small-text {
+    font-size: 20px;
+}
+
+div.h-inline {
+    display: inline-block;
+    vertical-align: top;
+}
+div.container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.container div.block {
+    padding: 10px;
+}
+div.v-cont {
+    display: flex;              /* establish flex container */
+    flex-direction: column;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+}
+
+input.button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 260px;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #0060DF;
+}
+input.button:hover {
+    filter: brightness(120%);
+}
