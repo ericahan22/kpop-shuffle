@@ -2,12 +2,12 @@
 
 @font-face {
     font-family:'Sora';
-    src: url('Sora Regular.eot');
-	src: url('Sora Regular.eot?#iefix') format('embedded-opentype'),
-		url('Sora Regular.woff2') format('woff2'),
-		url('Sora Regular.woff') format('woff'),
-		url('Sora Regular.ttf') format('truetype'),
-		url('Sora Regular.svg#Sora Regular') format('svg');
+    src: url('Sora Font/Sora Regular.eot');
+	src: url('Sora Font/Sora Regular.eot?#iefix') format('embedded-opentype'),
+		url('Sora Font/Sora Regular.woff2') format('woff2'),
+		url('Sora Font/Sora Regular.woff') format('woff'),
+		url('Sora Font/Sora Regular.ttf') format('truetype'),
+		url('Sora Font/Sora Regular.svg#Sora Regular') format('svg');
     font-weight: 400;
     font-style: normal;
     font-stretch: normal;
