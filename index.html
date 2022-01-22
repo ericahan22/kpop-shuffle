@@ -1,57 +1,119 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>kpop shuffler</title>
+        <title>K-POP SHUFFLE</title>
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
         <link rel="shortcut icon" type="image/gif", href="chaeyoung-crop-circle.gif" />
+        <link rel="stylesheet" href="styles.css"/>    
     </head>
     <body>
-        <h2>kpop shuffler v 1.0</h2>
-        <div style="float:left; margin-bottom:10px">
-            <input type="checkbox" id="videoCheck"> Don't show video (faster)
-            <div style="height:10px"></div>
-            <iframe id="vid" src="" width="778" height="438" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div style="float:left; height:430px; width:400px; margin:10px">
-            <div style="height:25px"></div>
-            <button type="button" id="butArt" style="font-size:90%">anything!</button>
-            <div style="height:10px"></div>
-            <button type="button" id="butPop" style="font-size:90%">popular</button>
-            <div style="height:10px"></div>
-            <button type="button" id="butFavs" style="font-size:90%">erica's favourite videos 😎</button>
-            <div style="height:10px"></div>
-            <hr>
-            <div style="height:10px"></div>
-            <button type="button" id="butFem" style="font-size:90%">female</button>
-            <div style="height:10px"></div>
-            <button type="button" id="butMal" style="font-size:90%">male</button>
-            <div style="height:10px"></div>
-            <hr>
-            <div style="height:10px"></div>
-            <button type="button" id="butNuguAll" style="font-size:90%">nugu (all)</button>
-            <div style="height:10px"></div>
-            <button type="button" id="butNuguFem" style="font-size:90%">nugu (female)</button>
-            <div style="height:10px"></div>
-            <button type="button" id="butNuguMal" style="font-size:90%">nugu (male)</button>
-            <div style="height:10px"></div>
-            <hr>
-            <div style="height:10px"></div>
-            <label for="input">you choose:</label>
-            <input type="text" id="input" name="input" placeholder="enter artist name">
-            <button type="button" id="butInput" style="font-size:90%">submit</button>
-            <div style="height:10px"></div>
-            <label for="search">personalized results:</label>
-            <input id="search" type="search" list="usernames" placeholder="enter last.fm username">
-            <datalist id="usernames">
-                <option value="chewtle"></option>
-                <option value="chewtle-gg"></option>
-                <option value="franey_22"></option>
-                <option value="pporappippam"></option>
-            </datalist>
-            <button type="button" id="butSearch" style="font-size:90%">submit</button>
-        </div>
-        <div style="clear:both">
-            <p id="txt" style="font-size:160%;"></p>
+        <h1>K-POP SHUFFLE</h1>
+        <p class="subhead">(i know, creative name)</p>
+
+        <div>
+            <div class='h-inline'>
+                <iframe id="vid" src="https://www.youtube.com/embed/iMH49ieL4es" width="640" height="385" frameborder="0" allowfullscreen></iframe>
+                <br>
+                <p class="info-line">Artist – Song<br><span class='small-text'>from</span> <span class='album-text'><i>Album</i></span> <span class='small-text'>(Year)</span></p>
+            </div>
+
+            <div class='h-inline'>
+                <div style="padding-left:30px">
+
+                    <p class='option-head'>Popularity</p>
+                    <div class="container">
+                        <div class="block">
+                            <div class="v-cont">
+                                <input type="checkbox" id="pop-5" checked>
+                                <p class="caption">who?</p>
+                            </div>    
+                        </div>
+
+                        <div class="block">
+                            <div class="v-cont">
+                                <input type="checkbox" id="pop-4" checked>
+                                <p class="caption">"underground"</p>
+                            </div>
+                        </div>
+
+                        <div class="block">
+                            <div class="v-cont">
+                                <input type="checkbox" id="pop-3" checked>
+                                <p class="caption">:shrug:</p>
+                            </div>
+                        </div>
+
+                        <div class="block">
+                            <div class="v-cont">
+                                <input type="checkbox" id="pop-2" checked>
+                                <p class="caption">heard of them</p>
+                            </div>
+                        </div>
+
+                        <div class="block">
+                            <div class="v-cont">
+                                <input type="checkbox" id="pop-1" checked>
+                                <p class="caption">popular</p>
+                            </div>
+                        </div>
+
+                        <div class="block">
+                            <div class="v-cont">
+                                <input type="checkbox" id="pop-0" checked>
+                                <p class="caption">BTS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr style="margin-bottom:20px">
+
+                    <p class='option-head'>Release Year</p>
+                    <div class="container">
+                        <div class="block">
+                            <div class="v-cont">
+                                <input type="checkbox" id="year-90" checked>
+                                <p class="caption">90s</p>
+                            </div>    
+                        </div>
+
+                        <div class="block">
+                            <div class="v-cont">
+                                <input type="checkbox" id="year-00" checked>
+                                <p class="caption">00s</p>
+                            </div>
+                        </div>
+
+                        <div class="block">
+                            <div class="v-cont">
+                                <input type="checkbox" id="year-10" checked>
+                                <p class="caption">10s</p>
+                            </div>
+                        </div>
+
+                        <div class="block">
+                            <div class="v-cont">
+                                <input type="checkbox" id="year-20" checked>
+                                <p class="caption">20s</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr style="margin-bottom:20px">
+
+                    <p class='option-head'>GGs or BGs?</p>
+                    <input type="checkbox" id="girls-check"><label for="girls-check">Girls</label>
+                    <input type="checkbox" id="boys-check"><label for="boys-check">Boys</label>
+                    <input type="radio" id="both-check" checked><label for="radio">I'm bisexual</label>
+
+                    <div style="padding-top:8px"></div>
+
+                    <input type="checkbox" id="tt-check"><label for="tt-check">Title tracks only?</label>
+
+                    <div style="padding-top:10px"></div>
+
+                    <input type="button" class="button" id="shuffle" value="🔀">
+                </div>
+            </div>
         </div>
         <script type="text/javascript" src="index.js"></script>
     </body>
