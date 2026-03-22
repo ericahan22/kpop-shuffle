@@ -11,9 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - name: Update config.json with API key
+    - name: Inject API key into index.js
       run: |
-        echo '["API_KEY","${{ secrets.YOUTUBE_API_KEY }}"]' > config.json
+        sed -i "s/const YOUTUBE_API_KEY = '';/const YOUTUBE_API_KEY = '${{ secrets.YOUTUBE_API_KEY }}';/" index.js
     
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
