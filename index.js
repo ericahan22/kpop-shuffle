@@ -1,190 +1,211 @@
+// Configuration
 const YOUTUBE_API_KEY = 'AIzaSyCbvtcaOHs2GgaiQCDEEQlaJNNpUl7yXa0';
+const MUSICBRAINZ_API = 'https://beta.musicbrainz.org/ws/2';
+const UNWANTED_RELEASE_TYPES = ['Interview', 'Live', 'DJ-mix'];
 
-//function: randomly selects from array
-function randomizer(array) {
-    let rand = array[Math.floor(Math.random() * array.length)];
-    return rand
+// Utility: randomly selects from array
+function pickRandom(array) {
+    return array[Math.floor(Math.random() * array.length)];
 }
 
-//function: reads files
-function readFile(file, callback) {
-
-    //checking if file is a url
-    if (file.includes("http")) {
-        var request = new XMLHttpRequest()
-        request.overrideMimeType("application/json")
-        request.open("GET", file, true)
-        request.onreadystatechange = function() {
-            if (request.readyState == 4 && request.status == "200") {
-                callback(request.responseText)
-            }
-            else if (file.includes("youtube") && request.status != "200") {
-                callback(request.status)
-            }
+// Utility: fetch with error handling
+async function fetchJSON(url) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
         }
-        request.send()
-    }
-
-    //if file is not a url (is artist name), return file
-    else {
-        callback(file)
+        return await response.json();
+    } catch (error) {
+        console.error(`Failed to fetch ${url}:`, error);
+        throw error;
     }
 }
 
-//sets user-agent?
-Object.defineProperty(navigator, 'userAgent', {
-    get: function () { return 'kpop-shuffle/0.1.0 ( ericahan.38@gmail.com )' }
+// Utility: fetch data (URL or plain text)
+async function getData(source) {
+    if (source.includes("http")) {
+        const response = await fetch(source);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return await response.text();
+    }
+    return source;
+}
+
+// Get artist name from source (URL or direct input)
+async function getArtistName(source) {
+    const data = await getData(source);
+    if (source.includes("http")) {
+        const artistList = data.split(",").map(a => a.trim()).filter(a => a);
+        return pickRandom(artistList);
+    }
+    return data;
+}
+
+// Get artist ID from MusicBrainz
+async function getArtistId(artistName) {
+    const url = `${MUSICBRAINZ_API}/artist?query=${encodeURIComponent(artistName)}&fmt=json`;
+    const response = await fetchJSON(url);
+    
+    for (const artist of response.artists) {
+        if (artist.country === "KR") {
+            return { id: artist.id, name: artist.name };
+        }
+    }
+    throw new Error(`No Korean artist found for "${artistName}"`);
+}
+
+// Get releases for an artist
+async function getValidReleases(artistId) {
+    const url = `${MUSICBRAINZ_API}/release?artist=${artistId}&inc=release-groups+recordings&fmt=json`;
+    const response = await fetchJSON(url);
+    
+    const validReleases = response.releases.filter(release => {
+        const secondaryTypes = release['release-group']['secondary-types'] || [];
+        const hasNoUnwantedTypes = !secondaryTypes.some(type => UNWANTED_RELEASE_TYPES.includes(type));
+        const hasTracks = release.media && release.media.length > 0;
+        return hasNoUnwantedTypes && hasTracks;
+    });
+    
+    if (validReleases.length === 0) {
+        throw new Error("No valid releases found");
+    }
+    
+    return validReleases;
+}
+
+// Get track from a release
+async function getTrackFromRelease(release) {
+    const tracks = release.media[0].tracks.map(t => t.title);
+    return pickRandom(tracks);
+}
+
+// Get YouTube video ID for a track
+async function getYouTubeVideoId(artist, track) {
+    const url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q="${encodeURIComponent(artist)}" "${encodeURIComponent(track)}"&key=${YOUTUBE_API_KEY}`;
+    
+    try {
+        const response = await fetchJSON(url);
+        return response.items[0].id.videoId;
+    } catch (error) {
+        console.warn("YouTube search failed:", error);
+        return null;
+    }
+}
+
+// Display result on page
+function displayResult(artist, track, videoId = null) {
+    const displayText = `${artist} - ${track}`;
+    document.getElementById("txt").innerHTML = displayText;
+    
+    if (videoId) {
+        document.getElementById("vid").src = `https://www.youtube.com/embed/${videoId}`;
+    } else {
+        document.getElementById("vid").src = "";
+    }
+}
+
+// Main function: get random song and display
+async function getSongAndDisplay(source) {
+    try {
+        const artistName = await getArtistName(source);
+        const { id: artistId, name: displayName } = await getArtistId(artistName);
+        const releases = await getValidReleases(artistId);
+        const release = pickRandom(releases);
+        const track = await getTrackFromRelease(release);
+        
+        const skipVideo = document.getElementById("videoCheck").checked;
+        
+        if (skipVideo) {
+            displayResult(displayName, track);
+        } else {
+            const videoId = await getYouTubeVideoId(displayName, track);
+            displayResult(displayName, track, videoId);
+        }
+    } catch (error) {
+        console.error("Error getting song:", error);
+        document.getElementById("txt").innerHTML = `Error: ${error.message}`;
+    }
+}
+
+// Validate input contains alphanumeric characters
+function isValidInput(inputText) {
+    return /[a-zA-Z0-9]/.test(inputText);
+}
+
+// Handle user input from text box
+function onInput() {
+    const inputText = document.getElementById("input").value.trim();
+    if (isValidInput(inputText)) {
+        getSongAndDisplay(inputText);
+    }
+}
+
+// Handle personalized results from Last.fm username
+function onSearch() {
+    const username = document.getElementById("search").value.trim();
+    if (username) {
+        getSongAndDisplay(`https://ericahan22.github.io/kpop-shuffle/people/${username}.txt`);
+    }
+}
+
+// Initialize on page load
+window.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("vid").src = "";
 });
 
-function bigFunction(file) {
+// Button event listeners
+document.getElementById("butArt").addEventListener("click", () => {
+    getSongAndDisplay("https://ericahan22.github.io/kpop-shuffle/database/artists.txt");
+});
 
-//call: gets artist name
-readFile(file, function(txt) {
+document.getElementById("butPop").addEventListener("click", () => {
+    getSongAndDisplay("https://ericahan22.github.io/kpop-shuffle/database/popular.txt");
+});
 
-    //do if artist name is received through database url
-    if (file.includes("http")) {
-        var artList = String(txt)
-        var artArray = artList.split(",")
-        var artist = randomizer(artArray)
+document.getElementById("butFavs").addEventListener("click", async () => {
+    try {
+        const favs = await fetchJSON("https://ericahan22.github.io/kpop-shuffle/database/favs.json");
+        const selectedFav = pickRandom(favs);
+        document.getElementById("vid").src = selectedFav[1];
+        document.getElementById("txt").innerHTML = selectedFav[0];
+    } catch (error) {
+        console.error("Failed to load favorites:", error);
     }
-    //do if artist name is received through text input
-    else {
-        var artist = file
-    }
-  
-    //call: gets artist ID
-    readFile("https://beta.musicbrainz.org/ws/2/artist?query="+encodeURIComponent(artist)+"&fmt=json", function(json) {
-        var data = JSON.parse(json)
-        for (i=0;i<data.artists.length;i++) {
-            if(data.artists[i].country == "KR") {
-                var artistID = data.artists[i].id
-                artist = data.artists[i].name
-                console.log(artist)
-                break
-            }
-        }
+});
 
-        //call: get track name
-        readFile("https://beta.musicbrainz.org/ws/2/release?artist="+artistID+"&inc=release-groups+recordings&fmt=json", function(json) {
-            var data = JSON.parse(json)
-            const unwanted = ['Interview','Live','DJ-mix']
-            var releaseArr = []
-            
-            //for loop: gather array of VALID releases by artist
-            for (i=0;i<data.releases.length;i++) {
-                var secType = data.releases[i]['release-group']['secondary-types']
-                if (!secType.some(type => unwanted.includes(type)) && data.releases[i].media.length != 0) {
-                    releaseArr.push(data.releases[i])
-                }
-            }
-            var release = randomizer(releaseArr)
-            var trkArr = []
+document.getElementById("butFem").addEventListener("click", () => {
+    getSongAndDisplay("https://ericahan22.github.io/kpop-shuffle/database/female.txt");
+});
 
-            //for loop: gather array of tracks from release
-            for (i=0;i<release.media[0].tracks.length;i++) {
-                trkArr.push(release.media[0].tracks[i].title)
-            }
-            var track = randomizer(trkArr)
+document.getElementById("butMal").addEventListener("click", () => {
+    getSongAndDisplay("https://ericahan22.github.io/kpop-shuffle/database/male.txt");
+});
 
-            //if "don't show video" is checked, then only show text
-            if (document.getElementById("videoCheck").checked) {
-                var text = artist+" - "+track
-                document.getElementById("txt").innerHTML=text
-            } else {
+document.getElementById("butNuguAll").addEventListener("click", () => {
+    getSongAndDisplay("https://ericahan22.github.io/kpop-shuffle/database/nuguAll.txt");
+});
 
-                //call: get youtube video id
-                readFile('https://youtube.googleapis.com/youtube/v3/search?part=snippet&q="'+encodeURIComponent(artist)+'" "'+encodeURIComponent(track)+'"&key='+YOUTUBE_API_KEY, function(json) {
-                    var data = JSON.parse(json)
-                    try {
-                        var videoID = data.items[0].id.videoId
-                        var embed = "https://www.youtube.com/embed/"+videoID
-                        var text = artist+" - "+track
+document.getElementById("butNuguFem").addEventListener("click", () => {
+    getSongAndDisplay("https://ericahan22.github.io/kpop-shuffle/database/nuguFem.txt");
+});
 
-                        document.getElementById("vid").src=embed
-                        document.getElementById("txt").innerHTML=text    
-                    }
-                    catch {
-                        var text = artist+" - "+track
-                        document.getElementById("txt").innerHTML=text
-                    }
-                })
-            }
-        })
-    })
-})
-}
+document.getElementById("butNuguMal").addEventListener("click", () => {
+    getSongAndDisplay("https://ericahan22.github.io/kpop-shuffle/database/nuguMal.txt");
+});
 
-//function: for input box
-function onInput() {
-    var inputText = document.getElementById("input").value
-    var yes = 0
+document.getElementById("butInput").addEventListener("click", onInput);
 
-    //for loop: checking if input contains ANY alphanumeric values
-    for (i = 0, len = inputText.length; i < len; i++) {
-
-        code = inputText.charCodeAt(i);
-        if (!(code > 47 && code < 58) && // numeric (0-9)
-            !(code > 64 && code < 91) && // upper alpha (A-Z)
-            !(code > 96 && code < 123)) { // lower alpha (a-z)
-                null
-        }
-        else {
-            yes = 1
-            break
-        }
-    }
-    if (yes == 1) {
-        bigFunction(inputText)
-    }
-}
-
-//function: for personalized results
-function onSearch() {
-    var searchText = document.getElementById("search").value
-    bigFunction("https://ericahan22.github.io/kpop-shuffle/people/"+searchText+".txt")
-}
-
-//event listeners
-window.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("vid").src=""
-})
-document.getElementById("butArt").addEventListener("click", function() {
-    bigFunction("https://ericahan22.github.io/kpop-shuffle/database/artists.txt")
-})
-document.getElementById("butPop").addEventListener("click", function() {
-    bigFunction("https://ericahan22.github.io/kpop-shuffle/database/popular.txt")
-})
-document.getElementById("butFavs").addEventListener("click", function() {
-    readFile("https://ericahan22.github.io/kpop-shuffle/database/favs.json", function(json) {
-        var selVid = randomizer(JSON.parse(json))
-        document.getElementById("vid").src=selVid[1]
-        document.getElementById("txt").innerHTML=selVid[0]
-    })
-})
-document.getElementById("butFem").addEventListener("click", function() {
-    bigFunction("https://ericahan22.github.io/kpop-shuffle/database/female.txt")
-})
-document.getElementById("butMal").addEventListener("click", function() {
-    bigFunction("https://ericahan22.github.io/kpop-shuffle/database/male.txt")
-})
-document.getElementById("butNuguAll").addEventListener("click", function() {
-    bigFunction("https://ericahan22.github.io/kpop-shuffle/database/nuguAll.txt")
-})
-document.getElementById("butNuguFem").addEventListener("click", function() {
-    bigFunction("https://ericahan22.github.io/kpop-shuffle/database/nuguFem.txt")
-})
-document.getElementById("butNuguMal").addEventListener("click", function() {
-    bigFunction("https://ericahan22.github.io/kpop-shuffle/database/nuguMal.txt")
-})
-document.getElementById("butInput").addEventListener("click", onInput)
-document.getElementById("input").addEventListener("keyup", function(event) {
+document.getElementById("input").addEventListener("keyup", (event) => {
     if (event.key === "Enter") {
-        onInput()
+        onInput();
     }
-})
-document.getElementById("butSearch").addEventListener("click", onSearch)
-document.getElementById("search").addEventListener("keyup", function(event) {
+});
+
+document.getElementById("butSearch").addEventListener("click", onSearch);
+
+document.getElementById("search").addEventListener("keyup", (event) => {
     if (event.key === "Enter") {
-        onSearch()
+        onSearch();
     }
-})
+});
