@@ -1,0 +1,38 @@
+#video-panel {
+    float: left;
+    margin-bottom: 10px;
+}
+
+#loading {
+    display: none;
+}
+
+#controls-panel {
+    float: left;
+    height: 430px;
+    width: 400px;
+    margin: 10px;
+}
+
+#controls-panel button {
+    font-size: 90%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#controls-panel hr {
+    margin: 10px 0;
+}
+
+#controls-panel label {
+    display: block;
+    margin-top: 10px;
+}
+
+#result-panel {
+    clear: both;
+}
+
+#txt {
+    font-size: 160%;
+}

@@ -4,43 +4,30 @@
         <title>kpop shuffler</title>
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
         <link rel="shortcut icon" type="image/gif", href="chaeyoung-crop-circle.gif" />
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <h2>kpop shuffler v 1.0</h2>
-        <div style="float:left; margin-bottom:10px">
+        <div id="video-panel">
             <input type="checkbox" id="videoCheck"> Don't show video (faster)
-            <div style="height:10px"></div>
-            <p id="loading" style="display:none;">Loading...</p>
+            <p id="loading">Loading...</p>
             <iframe id="vid" src="" width="778" height="438" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div style="float:left; height:430px; width:400px; margin:10px">
-            <div style="height:25px"></div>
-            <button type="button" id="butArt" style="font-size:90%">anything!</button>
-            <div style="height:10px"></div>
-            <button type="button" id="butPop" style="font-size:90%">popular</button>
-            <div style="height:10px"></div>
-            <button type="button" id="butFavs" style="font-size:90%">erica's favourite videos 😎</button>
-            <div style="height:10px"></div>
+        <div id="controls-panel">
+            <button type="button" id="butArt">anything!</button>
+            <button type="button" id="butPop">popular</button>
+            <button type="button" id="butFavs">erica's favourite videos 😎</button>
             <hr>
-            <div style="height:10px"></div>
-            <button type="button" id="butFem" style="font-size:90%">female</button>
-            <div style="height:10px"></div>
-            <button type="button" id="butMal" style="font-size:90%">male</button>
-            <div style="height:10px"></div>
+            <button type="button" id="butFem">female</button>
+            <button type="button" id="butMal">male</button>
             <hr>
-            <div style="height:10px"></div>
-            <button type="button" id="butNuguAll" style="font-size:90%">nugu (all)</button>
-            <div style="height:10px"></div>
-            <button type="button" id="butNuguFem" style="font-size:90%">nugu (female)</button>
-            <div style="height:10px"></div>
-            <button type="button" id="butNuguMal" style="font-size:90%">nugu (male)</button>
-            <div style="height:10px"></div>
+            <button type="button" id="butNuguAll">nugu (all)</button>
+            <button type="button" id="butNuguFem">nugu (female)</button>
+            <button type="button" id="butNuguMal">nugu (male)</button>
             <hr>
-            <div style="height:10px"></div>
             <label for="input">you choose:</label>
             <input type="text" id="input" name="input" placeholder="enter artist name">
-            <button type="button" id="butInput" style="font-size:90%">submit</button>
-            <div style="height:10px"></div>
+            <button type="button" id="butInput">submit</button>
             <label for="search">personalized results:</label>
             <input id="search" type="search" list="usernames" placeholder="enter last.fm username">
             <datalist id="usernames">
@@ -49,10 +36,10 @@
                 <option value="franey_22"></option>
                 <option value="pporappippam"></option>
             </datalist>
-            <button type="button" id="butSearch" style="font-size:90%">submit</button>
+            <button type="button" id="butSearch">submit</button>
         </div>
-        <div style="clear:both">
-            <p id="txt" style="font-size:160%;"></p>
+        <div id="result-panel">
+            <p id="txt"></p>
         </div>
         <script type="text/javascript" src="index.js"></script>
     </body>
