@@ -95,6 +95,7 @@ async function getYouTubeVideoId(artist, track) {
 
 // Display result on page
 function displayResult(artist, track, videoId = null) {
+    document.getElementById("loading").style.display = "none";
     const displayText = `${artist} - ${track}`;
     document.getElementById("txt").innerHTML = displayText;
     
@@ -107,6 +108,8 @@ function displayResult(artist, track, videoId = null) {
 
 // Main function: get random song and display
 async function getSongAndDisplay(source) {
+    document.getElementById("loading").style.display = "block";
+    document.getElementById("txt").innerHTML = "";
     try {
         const artistName = await getArtistName(source);
         const { id: artistId, name: displayName } = await getArtistId(artistName);
@@ -123,6 +126,7 @@ async function getSongAndDisplay(source) {
             displayResult(displayName, track, videoId);
         }
     } catch (error) {
+        document.getElementById("loading").style.display = "none";
         console.error("Error getting song:", error);
         document.getElementById("txt").innerHTML = `Error: ${error.message}`;
     }
