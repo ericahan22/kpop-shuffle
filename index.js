@@ -99,20 +99,20 @@ async function getYouTubeVideoId(artist, track) {
 
 // Display result on page
 function displayResult(artist, track, videoId = null) {
-    document.getElementById("loading").style.display = "none";
+    document.getElementById("loading").style.visibility = "hidden";
     const displayText = `${artist} - ${track}`;
     document.getElementById("txt").innerHTML = displayText;
     
     if (videoId) {
         document.getElementById("vid").src = `https://www.youtube.com/embed/${videoId}`;
     } else {
-        document.getElementById("vid").src = "";
+        document.getElementById("vid").src = "about:blank";
     }
 }
 
 // Main function: get random song and display
 async function getSongAndDisplay(source) {
-    document.getElementById("loading").style.display = "block";
+    document.getElementById("loading").style.visibility = "visible";
     document.getElementById("txt").innerHTML = "";
     try {
         const artistName = await getArtistName(source);
@@ -130,7 +130,7 @@ async function getSongAndDisplay(source) {
             displayResult(displayName, track, videoId);
         }
     } catch (error) {
-        document.getElementById("loading").style.display = "none";
+        document.getElementById("loading").style.visibility = "hidden";
         console.error("Error getting song:", error);
         document.getElementById("txt").innerHTML = `Error: ${error.message}`;
     }
@@ -154,7 +154,7 @@ async function onSearch() {
     const username = document.getElementById("search").value.trim();
     if (!username) return;
 
-    document.getElementById("loading").style.display = "block";
+    document.getElementById("loading").style.visibility = "visible";
     document.getElementById("txt").innerHTML = "";
 
     try {
@@ -170,20 +170,20 @@ async function onSearch() {
             } catch {
                 // reset loading state and try next artist after delay
                 await sleep(MUSICBRAINZ_DELAY_MS);
-                document.getElementById("loading").style.display = "block";
+                document.getElementById("loading").style.visibility = "visible";
                 document.getElementById("txt").innerHTML = "";
             }
         }
         throw new Error("No Korean artists found in your Last.fm top artists");
     } catch (error) {
-        document.getElementById("loading").style.display = "none";
+        document.getElementById("loading").style.visibility = "hidden";
         document.getElementById("txt").innerHTML = `Error: ${error.message}`;
     }
 }
 
 // Initialize on page load
 window.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("vid").src = "";
+    document.getElementById("vid").src = "about:blank";
 });
 
 // Button event listeners
