@@ -1,3 +1,5 @@
+const YOUTUBE_API_KEY = 'AIzaSyCbvtcaOHs2GgaiQCDEEQlaJNNpUl7yXa0';
+
 //function: randomly selects from array
 function randomizer(array) {
     let rand = array[Math.floor(Math.random() * array.length)];
@@ -90,26 +92,21 @@ readFile(file, function(txt) {
                 document.getElementById("txt").innerHTML=text
             } else {
 
-                //call: get config.json data
-                readFile("https://ericahan22.github.io/kpop-shuffle/config.json", function(json) {
+                //call: get youtube video id
+                readFile('https://youtube.googleapis.com/youtube/v3/search?part=snippet&q="'+encodeURIComponent(artist)+'" "'+encodeURIComponent(track)+'"&key='+YOUTUBE_API_KEY, function(json) {
                     var data = JSON.parse(json)
+                    try {
+                        var videoID = data.items[0].id.videoId
+                        var embed = "https://www.youtube.com/embed/"+videoID
+                        var text = artist+" - "+track
 
-                    //call: get youtube video id
-                    readFile('https://youtube.googleapis.com/youtube/v3/search?part=snippet&q="'+encodeURIComponent(artist)+'" "'+encodeURIComponent(track)+'"&key='+data[1], function(json) {
-                        var data = JSON.parse(json)
-                        try {
-                            var videoID = data.items[0].id.videoId
-                            var embed = "https://www.youtube.com/embed/"+videoID
-                            var text = artist+" - "+track
-
-                            document.getElementById("vid").src=embed
-                            document.getElementById("txt").innerHTML=text    
-                        }
-                        catch {
-                            var text = artist+" - "+track
-                            document.getElementById("txt").innerHTML=text
-                        }
-                    })
+                        document.getElementById("vid").src=embed
+                        document.getElementById("txt").innerHTML=text    
+                    }
+                    catch {
+                        var text = artist+" - "+track
+                        document.getElementById("txt").innerHTML=text
+                    }
                 })
             }
         })
