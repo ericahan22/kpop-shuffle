@@ -1,5 +1,6 @@
 // Configuration
 const YOUTUBE_API_KEY = '';
+const LASTFM_API_KEY = '1a3001dfbf71ca9dd816e9d666519d21';
 const MUSICBRAINZ_API = 'https://beta.musicbrainz.org/ws/2';
 const UNWANTED_RELEASE_TYPES = ['Interview', 'Live', 'DJ-mix'];
 
@@ -146,10 +147,22 @@ function onInput() {
 }
 
 // Handle personalized results from Last.fm username
-function onSearch() {
+async function onSearch() {
     const username = document.getElementById("search").value.trim();
-    if (username) {
-        getSongAndDisplay(`https://ericahan22.github.io/kpop-shuffle/people/${username}.txt`);
+    if (!username) return;
+
+    document.getElementById("loading").style.display = "block";
+    document.getElementById("txt").innerHTML = "";
+
+    try {
+        const url = `https://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&user=${encodeURIComponent(username)}&api_key=${LASTFM_API_KEY}&format=json&limit=50`;
+        const data = await fetchJSON(url);
+        const artists = data.topartists.artist.map(a => a.name);
+        const artist = pickRandom(artists);
+        await getSongAndDisplay(artist);
+    } catch (error) {
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("txt").innerHTML = `Error: couldn't load Last.fm data for "${username}"`;
     }
 }
 
