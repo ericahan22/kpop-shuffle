@@ -91,7 +91,7 @@ readFile(file, function(txt) {
             } else {
 
                 //call: get config.json data
-                readFile("https://chewtle.github.io/kpop-shuffle/config.json", function(json) {
+                readFile("https://ericahan22.github.io/kpop-shuffle/config.json", function(json) {
                     var data = JSON.parse(json)
 
                     //call: get youtube video id
@@ -144,7 +144,7 @@ function onInput() {
 //function: for personalized results
 function onSearch() {
     var searchText = document.getElementById("search").value
-    bigFunction("https://chewtle.github.io/kpop-shuffle/people/"+searchText+".txt")
+    bigFunction("https://ericahan22.github.io/kpop-shuffle/people/"+searchText+".txt")
 }
 
 //event listeners
@@ -152,32 +152,32 @@ window.addEventListener("DOMContentLoaded", function() {
     document.getElementById("vid").src=""
 })
 document.getElementById("butArt").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/artists.txt")
+    bigFunction("https://ericahan22.github.io/kpop-shuffle/database/artists.txt")
 })
 document.getElementById("butPop").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/popular.txt")
+    bigFunction("https://ericahan22.github.io/kpop-shuffle/database/popular.txt")
 })
 document.getElementById("butFavs").addEventListener("click", function() {
-    readFile("https://chewtle.github.io/kpop-shuffle/database/favs.json", function(json) {
+    readFile("https://ericahan22.github.io/kpop-shuffle/database/favs.json", function(json) {
         var selVid = randomizer(JSON.parse(json))
         document.getElementById("vid").src=selVid[1]
         document.getElementById("txt").innerHTML=selVid[0]
     })
 })
 document.getElementById("butFem").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/female.txt")
+    bigFunction("https://ericahan22.github.io/kpop-shuffle/database/female.txt")
 })
 document.getElementById("butMal").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/male.txt")
+    bigFunction("https://ericahan22.github.io/kpop-shuffle/database/male.txt")
 })
 document.getElementById("butNuguAll").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/nuguAll.txt")
+    bigFunction("https://ericahan22.github.io/kpop-shuffle/database/nuguAll.txt")
 })
 document.getElementById("butNuguFem").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/nuguFem.txt")
+    bigFunction("https://ericahan22.github.io/kpop-shuffle/database/nuguFem.txt")
 })
 document.getElementById("butNuguMal").addEventListener("click", function() {
-    bigFunction("https://chewtle.github.io/kpop-shuffle/database/nuguMal.txt")
+    bigFunction("https://ericahan22.github.io/kpop-shuffle/database/nuguMal.txt")
 })
 document.getElementById("butInput").addEventListener("click", onInput)
 document.getElementById("input").addEventListener("keyup", function(event) {
