@@ -3,6 +3,9 @@ const YOUTUBE_API_KEY = 'AIzaSyCbvtcaOHs2GgaiQCDEEQlaJNNpUl7yXa0';
 const LASTFM_API_KEY = '1a3001dfbf71ca9dd816e9d666519d21';
 const MUSICBRAINZ_API = 'https://beta.musicbrainz.org/ws/2';
 const UNWANTED_RELEASE_TYPES = ['Interview', 'Live', 'DJ-mix'];
+const MUSICBRAINZ_DELAY_MS = 1100;
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 // Utility: randomly selects from array
 function pickRandom(array) {
@@ -76,7 +79,7 @@ async function getValidReleases(artistId) {
 }
 
 // Get track from a release
-async function getTrackFromRelease(release) {
+function getTrackFromRelease(release) {
     const tracks = release.media[0].tracks.map(t => t.title);
     return pickRandom(tracks);
 }
@@ -116,7 +119,7 @@ async function getSongAndDisplay(source) {
         const { id: artistId, name: displayName } = await getArtistId(artistName);
         const releases = await getValidReleases(artistId);
         const release = pickRandom(releases);
-        const track = await getTrackFromRelease(release);
+        const track = getTrackFromRelease(release);
         
         const skipVideo = document.getElementById("videoCheck").checked;
         
@@ -157,12 +160,24 @@ async function onSearch() {
     try {
         const url = `https://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&user=${encodeURIComponent(username)}&api_key=${LASTFM_API_KEY}&format=json&limit=50`;
         const data = await fetchJSON(url);
-        const artists = data.topartists.artist.map(a => a.name);
-        const artist = pickRandom(artists);
-        await getSongAndDisplay(artist);
+
+        // Shuffle and try up to 5 artists in case some have no Korean MusicBrainz entry
+        const artists = [...data.topartists.artist.map(a => a.name)].sort(() => Math.random() - 0.5);
+        for (const artist of artists.slice(0, 5)) {
+            try {
+                await getSongAndDisplay(artist);
+                return;
+            } catch {
+                // reset loading state and try next artist after delay
+                await sleep(MUSICBRAINZ_DELAY_MS);
+                document.getElementById("loading").style.display = "block";
+                document.getElementById("txt").innerHTML = "";
+            }
+        }
+        throw new Error("No Korean artists found in your Last.fm top artists");
     } catch (error) {
         document.getElementById("loading").style.display = "none";
-        document.getElementById("txt").innerHTML = `Error: couldn't load Last.fm data for "${username}"`;
+        document.getElementById("txt").innerHTML = `Error: ${error.message}`;
     }
 }
 
@@ -187,7 +202,7 @@ document.getElementById("butFavs").addEventListener("click", async () => {
         document.getElementById("vid").src = selectedFav[1];
         document.getElementById("txt").innerHTML = selectedFav[0];
     } catch (error) {
-        console.error("Failed to load favorites:", error);
+        console.error("Failed to load favourites:", error);
     }
 });
 
