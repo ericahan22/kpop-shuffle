@@ -1,5 +1,5 @@
 // Configuration
-const YOUTUBE_API_KEY = '';
+const YOUTUBE_API_KEY = 'AIzaSyCbvtcaOHs2GgaiQCDEEQlaJNNpUl7yXa0';
 const LASTFM_API_KEY = '1a3001dfbf71ca9dd816e9d666519d21';
 const MUSICBRAINZ_API = 'https://beta.musicbrainz.org/ws/2';
 const UNWANTED_RELEASE_TYPES = ['Interview', 'Live', 'DJ-mix'];
